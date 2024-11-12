@@ -4,19 +4,14 @@ import { RecoilRoot, atom,useRecoilValue, useRecoilState } from 'recoil'
 import { CounterAtom } from './store/atoms/counter'
 
 function App(){
-
-
   return(
     <RecoilRoot>
       <Counter/>
-      </RecoilRoot>
-
+     </RecoilRoot>
   )
-
 }
 
 function Counter(){
-
   return <div>
     <CurrentCount  />
     <Decrease />
@@ -36,7 +31,6 @@ function Decrease(){
   function decrease(){
      setCount( c => c - 1);
   }
-
   return <div>
     <button onClick={decrease}>Decrease</button>
   </div>
@@ -52,9 +46,5 @@ function Increase(){
     <button onClick={increase}>Increase</button>
   </div>
 }
-
-
-
-
 
 export default App 
