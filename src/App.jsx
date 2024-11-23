@@ -13,7 +13,7 @@ function App(){
 
 function Counter(){
   return <div>
-    <CurrentCount  />
+    <CurrentCount/>
     <Decrease />
     <Increase />
   </div>
@@ -43,7 +43,7 @@ function Increase(){
   }
 
   return <div>
-    <button onClick={increase}>Increase</button>
+    <button onClick = {increase}>Increase</button>
   </div>
 }
 
