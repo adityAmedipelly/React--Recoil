@@ -1,6 +1,6 @@
 import {atom} from "recoil"
 
 export const CounterAtom = atom({
-    default : 1
+    default : 0,
     key : "counter"
 })
